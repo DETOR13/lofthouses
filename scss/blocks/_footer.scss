@@ -1,0 +1,39 @@
+.footer {
+	padding-top: 72px;
+	background: $footer-bg;
+	padding-bottom: 51px;
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	@include mediaTablet {
+		padding-top: 36px;
+		padding-bottom: 25px;
+	}
+}
+.footer__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	@include mediaTablet {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+}
+.footer__logo {
+	margin-top: -12px;
+}
+.footer__nav-list {
+	display: grid;
+	gap: 15px;
+}
+.footer__socials {
+	display: flex;
+	gap: 15px;
+	margin-top: 20px;
+}
+.email {
+	color: $accent;
+	font-weight: 700;
+	&:hover {
+		color: $white;
+	}
+}

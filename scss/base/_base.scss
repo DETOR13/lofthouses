@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+
+body {
+	font-family: $font-main;
+	background-color: $dark;
+	color: $white;
+	font-size: 16px;
+}
+.no-scroll {
+	overflow-y: hidden;
+}
+a {
+	color: $white;
+	transition: 0.2s ease-in;
+	&:hover {
+		color: $accent;
+	}
+}
+
+.container {
+	max-width: 1110px;
+	padding: 0 15px;
+	margin: 0 auto;
+	&--sm {
+		max-width: 840px;
+	}
+}
+.text-right {
+	text-align: right;
+}
+.none {
+	display: none !important;
+}
+.title-2 {
+	font-size: 36px;
+	color: $accent;
+	font-family: $font-accent;
+	font-weight: 700;
+	@include mediaTablet {
+		font-size: 28px;
+	}
+}
+body::-webkit-scrollbar {
+	width: 7px; /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+	background: $dark; /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+	background-color: $footer-bg; /* цвет плашки */
+	border-radius: 10px; /* закругления плашки */
+	border: 1px solid $white; /* padding вокруг плашки */
+}
